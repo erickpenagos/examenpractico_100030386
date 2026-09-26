@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exámen Práctico 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="container-fluid bg-white py-3 px-xl-5 d-none d-lg-block">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <a href="" class="text-decoration-none">
+                    <div class="logo-box">MULTI VENTAS</div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control rounded-0" placeholder="Search for products">
+                        <button class="btn btn-outline-warning rounded-0 bg-transparent text-warning border"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-6 text-end">
+                <p class="m-0 text-muted">Servicio al cliente</p>
+                <h5 class="m-0">+52 9611872633</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="container-fluid bg-dark-custom mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn bg-yellow w-100 d-flex align-items-center justify-content-between rounded-0 py-3 px-4" href="#collapse-menu">
+                    <h6 class="m-0 text-dark"><i class="fa fa-bars me-2"></i>Categorías</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom py-3 py-lg-0 px-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active text-yellow">Inicio</a>
+                            <a href="#" class="nav-item nav-link">Tienda</a>
+                            <a href="#" class="nav-item nav-link">Galeria</a>
+                            <a href="#" class="nav-item nav-link">Nosotros</a>
+                            <a href="#" class="nav-item nav-link">Contacto</a>
+                        </div>
+                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                            <a href="" class="btn px-0 text-yellow">
+                                <i class="fas fa-heart text-yellow"></i>
+                                <span class="badge border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a>
+                            <a href="" class="btn px-0 ml-3 text-yellow">
+                                <i class="fas fa-shopping-cart text-yellow"></i>
+                                <span class="badge border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hero  -->
+    <div class="container-fluid mb-3">
+        <div class="row px-xl-5">
+            <div class="col-lg-8">
+                <div id="mainCarousel" class="carousel slide banner-container banner-main mb-30" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100">
+                            <img src="img/carrusel-2.jpg" class="d-block w-100 h-100" style="object-fit: cover; opacity: 0.7;" alt="Moda Femenina">
+                            <div class="banner-text">
+                                <h1 class="display-4 text-white font-weight-semi-bold mb-4">Moda Femenina</h1>
+                                <p class="mb-4">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam.</p>
+                                <a href="" class="btn btn-outline-light py-2 px-4">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="img/carrusel-1.jpg" class="d-block w-100 h-100" style="object-fit: cover; opacity: 0.7;" alt="Moda Casual">
+                            <div class="banner-text">
+                                <h1 class="display-4 text-white font-weight-semi-bold mb-4">Moda Casual</h1>
+                                <p class="mb-4">Descubre las nuevas tendencias de temporada con estilos únicos para ti.</p>
+                                <a href="" class="btn btn-outline-light py-2 px-4">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="img/carrusel-3.jpg" class="d-block w-100 h-100" style="object-fit: cover; opacity: 0.7;" alt="Nuevos Lanzamientos">
+                            <div class="banner-text">
+                                <h1 class="display-4 text-white font-weight-semi-bold mb-4">Nuevos Lanzamientos</h1>
+                                <p class="mb-4">Aprovecha nuestras ofertas exclusivas en la nueva colección de este mes.</p>
+                                <a href="" class="btn btn-outline-light py-2 px-4">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="banner-container banner-side">
+                    <img src="img/oferta-1.jpg" alt="Ofertas Temporada">
+                    <div class="banner-text">
+                        <h6 class="text-white text-uppercase">-AHORRA 20%</h6>
+                        <h3 class="text-white mb-3">Ofertas de temporada</h3>
+                        <a href="" class="btn btn-sm btn-outline-light">Comprar</a>
+                    </div>
+                </div>
+                <div class="banner-container banner-side">
+                    <img src="img/oferta-2.jpg" alt="Ofertas Especiales">
+                    <div class="banner-text">
+                        <h6 class="text-white text-uppercase">-AHORRA 30%</h6>
+                        <h3 class="text-white mb-3">Ofertas especiales</h3>
+                        <a href="" class="btn btn-sm btn-outline-light">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="feature-box">
+                    <i class="fa fa-check"></i>
+                    <h5 class="m-0">Mejora calidad</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="feature-box">
+                    <i class="fa fa-shipping-fast"></i>
+                    <h5 class="m-0">Envio gratis</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="feature-box">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h5 class="m-0">Devolucion de<br>30 días</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="feature-box">
+                    <i class="fa fa-phone-volume"></i>
+                    <h5 class="m-0">Soporte 24/7</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">CATEGORÍAS</span></h2>
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <a class="text-decoration-none" href="">
+                    <div class="category-card">
+                        <img src="img/cat-1.jpg" alt="Ropa">
+                        <div>
+                            <h6 class="m-0">Ropa</h6>
+                            <small class="text-muted">100 Productos</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <a class="text-decoration-none" href="">
+                    <div class="category-card">
+                        <img src="img/cat-2.jpg" alt="Electrónica">
+                        <div>
+                            <h6 class="m-0">Electrónica</h6>
+                            <small class="text-muted">100 Productos</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <a class="text-decoration-none" href="">
+                    <div class="category-card">
+                        <img src="img/cat-3.jpg" alt="Calzado">
+                        <div>
+                            <h6 class="m-0">Calzado</h6>
+                            <small class="text-muted">100 Productos</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <a class="text-decoration-none" href="">
+                    <div class="category-card">
+                        <img src="img/cat-4.jpg" alt="Belleza">
+                        <div>
+                            <h6 class="m-0">Belleza</h6>
+                            <small class="text-muted">100 Productos</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 pb-3">
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">PRODUCTOS DESTACADOS</span></h2>
+        <div class="row px-xl-5">
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="product-card">
+                    <img src="img/product-1.jpg" alt="Camara fotografica Canon">
+                    <h6>Camara fotografica Canon</h6>
+                    <div class="d-flex justify-content-center">
+                        <span class="product-price">$12,500.00</span><span class="product-price-old">$15,000.00</span>
+                    </div>
+                    <div class="rating mt-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <small class="text-muted">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="product-card">
+                    <img src="img/product-2.jpg" alt="Blusa azul">
+                    <h6>Blusa azul</h6>
+                    <div class="d-flex justify-content-center">
+                        <span class="product-price">$250.00</span><span class="product-price-old">$400.00</span>
+                    </div>
+                    <div class="rating mt-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <small class="text-muted">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="product-card">
+                    <img src="img/product-3.jpg" alt="Lampara de mesa">
+                    <h6>Lampara de mesa</h6>
+                    <div class="d-flex justify-content-center">
+                        <span class="product-price">$1,250.00</span><span class="product-price-old">$2,300.00</span>
+                    </div>
+                    <div class="rating mt-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <small class="text-muted">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="product-card">
+                    <img src="img/product-4.jpg" alt="Tenis Nike">
+                    <h6>Tenis Nike</h6>
+                    <div class="d-flex justify-content-center">
+                        <span class="product-price">$799.00</span><span class="product-price-old">$993.00</span>
+                    </div>
+                    <div class="rating mt-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <small class="text-muted">(99)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid px-xl-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-5">
+                    <h5 class="mb-4">CONTÁCTANOS</h5>
+                    <p>Ubica nuestra tienda fisica en</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-yellow mr-3"></i> Av. central No. 123</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-yellow mr-3"></i> info@tienda.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-yellow mr-3"></i> +52 961 187 2633</p>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-5">
+                    <h5 class="mb-4">MENU</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-angle-right mr-2"></i> Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right mr-2"></i> Tienda</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right mr-2"></i> Galeria</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right mr-2"></i> Nosotros</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right mr-2"></i> Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-5">
+                    <h5 class="mb-4">NUESTRAS REDES SOCIALES</h5>
+                    <div class="d-flex">
+                        <a class="social-btn" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-btn" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-fluid px-xl-5">
+                <div class="row">
+                    <div class="col-md-6 px-xl-0">
+                        <p class="mb-md-0 text-center text-md-left text-secondary">
+                            &copy; Domain. Todos los derechos reservados. Diseñado by Erick Ulises Penagos Padilla. 5K
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
